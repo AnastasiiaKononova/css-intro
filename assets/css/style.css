@@ -6,6 +6,7 @@
     font-family: ;
     font-style: ;
     line-height: ; (найуніверсальніше задавати коефіцієнтом)
+    text-decoration: ;
 } */
 
 
@@ -19,12 +20,16 @@ body {
 h2{
     border: 2px solid red;
     width: 400px;
+    padding: 10px;
+    
     white-space: nowrap;
     overflow: hidden;
-    padding: 10px;
     text-overflow: ellipsis;
+
+    text-transform: uppercase;
 }
 
 div{
     white-space: pre;
+    text-transform: capitalize;
 }
