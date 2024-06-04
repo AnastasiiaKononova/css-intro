@@ -1,35 +1,34 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
-
-/* p{
-    text-align: ;
-    font-size: 1rem;
-    font-family: ;
-    font-style: ;
-    line-height: ; (найуніверсальніше задавати коефіцієнтом)
-    text-decoration: ;
-} */
-
-
-body {
-    font-family: Lato, sans-serif;
-    /* font-weight: 400;
-    font-style: normal; */
-    line-height: 1.15;
+h1,
+h2 {
+  font-style: italic;
 }
 
-h2{
-    border: 2px solid red;
-    width: 400px;
-    padding: 10px;
-    
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
+/*
+Комбінатори:
+-  > дочірніх ел
+- потомків
 
-    text-transform: uppercase;
+- ~ сусідніх (наступних) елементів
+- + наступного елемента
+*/
+
+body > * {
+  border: 1px solid red;
 }
 
-div{
-    white-space: pre;
-    text-transform: capitalize;
+/* Зробити жирним тільки ті абзаци, які в section  */
+section > p {
+  font-weight: bold;
+}
+
+section h2 {
+  color: blueviolet;
+}
+
+h2 + p {
+  background-color: aqua;
+}
+
+h2 + p ~ p {
+  color: blue;
 }
