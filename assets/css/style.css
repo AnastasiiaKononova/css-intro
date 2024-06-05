@@ -1,84 +1,82 @@
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
-html {
-    --user-photo-width: 150px;
-}
-
+html,
 body {
-    font-family: sans-serif;
-    line-height: 1.2;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: black;
 }
 
-a {
-    text-decoration: none;
-    color: inherit;
+main {
+  font-size: 0;
+  margin: 50px auto;
+  padding: 0.01rem 1rem;
 }
 
-.userCard {
-    max-width: 300px;
-    width: 100%;
-    min-width: 250px;
-    margin: 50px auto;
-    border-radius: 30px;
-    box-shadow: 0 0 10px gray;
-    overflow: hidden;
-    text-align: center;
+h1,
+h2 {
+  font-size: 30px;
+  color: black;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.5;
 }
 
-.bg {
-    background-image: url("https://images.pexels.com/photos/1257860/pexels-photo-1257860.jpeg?auto=compress&cs=tinysrgb&w=400");
-    height: 150px;
-    color: white;
-    padding: 25px;
-    text-align: right;
+p {
+  font-size: 1rem;
+  margin: 1rem auto;
 }
 
-.content-wrapper {
-    padding: 0 1em 1em;
+img {
+  max-width: 100%;
 }
 
-.userImg {
-    width: var(--user-photo-width);
-    height: var(--user-photo-width);
-    object-fit: cover;
-    border-radius: 50%;
-    display: inline-block;
-    margin-top: calc((-1) * var(--user-photo-width) / 2);
-    border: 3px solid white;
+.mainTitle {
+  display: inline-block;
+  white-space: pre-line;
+  width: 100%;
+  max-width: 770px;
+  background-color: #ffc107;
+  opacity: 0.7;
+  padding: 0.01rem 1rem;
 }
 
-.userName {
-    font-size: 1.5rem;
-    margin: 0.4em 0;
+.hero-content {
+  background: url(../beach3.jpeg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+  width: 100%;
+  max-width: 1146px;
+  height: 100vh;
+  max-height: 568px;
+  margin-bottom: 50px;
 }
 
-.userGeoposition {
-    font-size: 1rem;
-    margin: 0.5em 0;
+.hero-greetings-wrapper {
+  padding-top: 24rem;
 }
 
-.job {
-    font-size: 1.2rem;
-    margin: 0.4em 0;
+.card {
+  display: inline-block;
+  width: 50%;
+  padding: 0.01rem 1rem;
+  margin-bottom: 50px;
 }
 
-.experience {
-    font-size: 1rem;
-    margin: 1.2em 0;
+.cardImg {
+  border-top: 6px solid #ffc107;
 }
 
-.userSociallink {
-    color: white;
-    font-size: 1.5rem;
-    background-color: gray;
-    border-radius: 50%;
-    padding-top: 10px;
-    width: 45px;
-    height: 45px;
+.cardImg img {
+  width: 100%;
 }
 
-.userSociallink+ .userSociallink {
-    margin-left: 30px;
+.cardContent h2 {
+  font-weight: normal;
+  margin: 10px 0;
 }
