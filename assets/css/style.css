@@ -1,82 +1,283 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+
 * {
   box-sizing: border-box;
 }
 
-html,
-body {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+html {
+  font-family: "Lato", sans-serif;
   font-size: 16px;
-  line-height: 1.5;
-  color: black;
 }
 
-main {
-  font-size: 0;
-  margin: 50px auto;
-  padding: 0.01rem 1rem;
-}
-
-h1,
-h2 {
-  font-size: 30px;
-  color: black;
-  font-weight: bold;
-  font-family: Arial, Helvetica, sans-serif;
-  line-height: 1.5;
+a {
+  color: white;
+  text-decoration: none;
 }
 
 p {
-  font-size: 1rem;
-  margin: 1rem auto;
+  margin: 1em 0;
+}
+
+nav {
+  width: calc(100% - 62px);
+}
+
+button {
+  background: transparent;
+  color: white;
+  border: none;
+  cursor: pointer;
 }
 
 img {
   max-width: 100%;
 }
 
-.mainTitle {
+main,
+section,
+div,
+p,
+span {
+  line-height: 1.5;
+}
+
+footer {
+  padding: 64px 16px;
+}
+
+input {
+  display: block;
+  border: 1px solid rgb(204, 204, 204);
+  background-color: rgb(255, 255, 255);
+  padding: 0.5rem;
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+}
+
+.icon-text {
+  font-family: "Lato", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.display-ib {
   display: inline-block;
-  white-space: pre-line;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-justify {
+  text-align: justify;
+}
+
+.left-corner {
+  width: calc(100% - 30px);
+}
+
+.pd {
+  padding: 0.5rem 1rem;
+}
+
+.padding-card {
+  padding: 0 0.5rem;
+}
+
+.content-wrapper {
+  margin: 0 auto;
+  padding: 4rem 1rem;
+  max-width: 800px;
+}
+
+.nav-menu {
+  background-color: black;
   width: 100%;
-  max-width: 770px;
-  background-color: #ffc107;
-  opacity: 0.7;
-  padding: 0.01rem 1rem;
+  height: 46.5px;
+}
+
+.nav-item {
+  padding: 12px 24px;
 }
 
 .hero-content {
-  background: url(../beach3.jpeg);
+  background-image: url(https://www.w3schools.com/w3images/la.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  height: 530px;
+}
+
+.main-title {
+  padding: 2rem 1rem;
   color: white;
-  width: 100%;
-  max-width: 1146px;
-  height: 100vh;
-  max-height: 568px;
-  margin-bottom: 50px;
+  line-height: 2;
+  vertical-align: bottom;
+  width: 354px;
+  margin-left: calc(50% - 177px);
 }
 
-.hero-greetings-wrapper {
-  padding-top: 24rem;
+.helper {
+  height: 100%;
+  vertical-align: bottom;
 }
 
-.card {
+.main-title h1 {
+  font-family: "Segoe UI", Arial, sans-serif;
+  font-size: 24px;
+}
+
+.section-title {
+  font-family: "Segoe UI", Arial, sans-serif;
+  font-size: 30px;
+  font-weight: 400;
+  letter-spacing: 4px;
+  margin: 0 10px;
+}
+
+.color-white {
+  color: white;
+}
+
+.color-gray {
+  color: #656565;
+}
+
+.bg-red {
+  background-color: #f44336;
+  padding: 0 0.5rem;
+  margin-left: 1rem;
+}
+
+.bg-black {
+  background-color: black;
+  border-radius: 50%;
+  padding: 0 0.5rem;
+}
+
+.topic {
+  color: #656565;
+  font-style: italic;
+}
+
+.band-members {
+  padding: 2rem 0;
+  font-size: 0;
+}
+
+.members-item {
+  width: calc(100% / 3);
+  font-size: 1rem;
+}
+
+.members-content {
+  margin: 15px 0;
+}
+
+#tour {
+  background-color: black;
+}
+
+.item-img img {
+  width: 60%;
+  border-radius: 4px;
+  border-style: none;
+}
+
+.mb-1 {
+  margin-bottom: 1rem;
+}
+
+.bg-white {
+  background-color: white;
+}
+
+.border-top {
+  border-top: 1px solid #ccc;
+}
+
+.tickets {
+  margin: 0 -0.5rem;
+}
+
+.padding-inside {
+  padding: 0.15px 16px;
+}
+
+.button-tickets {
   display: inline-block;
-  width: 50%;
-  padding: 0.01rem 1rem;
-  margin-bottom: 50px;
+  background-color: black;
+  margin-bottom: 1rem;
+  padding: 0.5rem 1rem 0.7rem;
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
 }
 
-.cardImg {
-  border-top: 6px solid #ffc107;
+.column {
+  vertical-align: top;
+  width: calc(100% / 2);
 }
 
-.cardImg img {
+.contact-contain {
+  padding: 2rem 0;
+}
+
+.size-icon {
+  font-size: 18px;
+  width: 30px;
+}
+
+.text0 {
+  font-size: 0;
+}
+
+.form {
+  margin: 0 -1rem 0.5rem -1rem;
+  padding: 0 0.5rem;
+  font-size: 0;
+}
+
+.half-form {
+  padding: 0 0.5rem;
+  width: calc(100% / 2);
+}
+.half-form input {
+  max-width: 100%;
+}
+
+.input-message {
   width: 100%;
 }
+.form-button {
+  text-align: right;
+}
 
-.cardContent h2 {
-  font-weight: normal;
-  margin: 10px 0;
+.button-send {
+  display: inline-block;
+  background-color: black;
+  cursor: pointer;
+  margin: 1rem 0;
+  padding: 0.5rem 1rem;
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  text-align: center;
+}
+
+.map-image {
+  background-image: url(https://www.w3schools.com/w3images/map.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 660px;
+  max-width: 100%;
+}
+
+.icon-size {
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.p-author a {
+  color: #656565;
+  text-decoration: underline;
 }
