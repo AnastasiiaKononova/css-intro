@@ -1,283 +1,174 @@
-@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bellefair&display=swap");
 
 * {
   box-sizing: border-box;
 }
 
 html {
-  font-family: "Lato", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 16px;
-}
-
-a {
-  color: white;
-  text-decoration: none;
-}
-
-p {
-  margin: 1em 0;
-}
-
-nav {
-  width: calc(100% - 62px);
-}
-
-button {
-  background: transparent;
-  color: white;
-  border: none;
-  cursor: pointer;
-}
-
-img {
-  max-width: 100%;
-}
-
-main,
-section,
-div,
-p,
-span {
   line-height: 1.5;
 }
 
-footer {
-  padding: 64px 16px;
+.container {
+  width: 100%;
+  max-width: 1140px;
+  margin: 0 auto;
 }
 
-input {
-  display: block;
-  border: 1px solid rgb(204, 204, 204);
-  background-color: rgb(255, 255, 255);
-  padding: 0.5rem;
-  font-family: "Lato", sans-serif;
-  font-size: 16px;
+.row {
+  margin: 0 -1rem;
 }
 
-.icon-text {
-  font-family: "Lato", sans-serif;
-  font-size: 18px;
+a {
+  text-decoration: none;
+  color: #1f1f1f;
+  font-size: 14px;
+  letter-spacing: 2%;
+  text-align: center;
+  line-height: 1.5;
+}
+
+h1 {
+  font-family: "Bellefair", sans-serif;
   font-weight: 400;
+  font-size: 64px;
+  line-height: 72px;
+  color: #1f1f1f;
+  text-transform: uppercase;
+}
+
+h3 {
+  font-size: 14px;
+  line-height: 1.5;
+  font-weight: 400;
+  text-align: center;
+  color: #ffffff;
+}
+
+h2 {
+  font-size: 20px;
+  line-height: 1.5;
+  font-weight: 300;
+  letter-spacing: 3%;
+  color: #1f1f1f;
+}
+
+p {
+  font-size: 18px;
+  line-height: 1.5;
+  color: #757575;
+}
+
+i {
+  font-size: 14px;
+}
+
+button {
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  color: white;
+  font-weight: 500;
+  border: none;
+  letter-spacing: 5%;
+  line-height: 1.5;
+  width: 240px;
+  cursor: pointer;
+}
+
+span {
+  font-size: 12px;
+}
+
+.bg-gold {
+  background-color: #ad9962;
 }
 
 .display-ib {
   display: inline-block;
 }
 
+.text-right {
+  text-align: right;
+}
+
 .text-center {
   text-align: center;
 }
 
-.text-justify {
-  text-align: justify;
+.vertical-middle {
+  vertical-align: middle;
 }
 
-.left-corner {
-  width: calc(100% - 30px);
-}
-
-.pd {
-  padding: 0.5rem 1rem;
-}
-
-.padding-card {
-  padding: 0 0.5rem;
-}
-
-.content-wrapper {
-  margin: 0 auto;
-  padding: 4rem 1rem;
-  max-width: 800px;
-}
-
-.nav-menu {
-  background-color: black;
-  width: 100%;
-  height: 46.5px;
-}
-
-.nav-item {
-  padding: 12px 24px;
-}
-
-.hero-content {
-  background-image: url(https://www.w3schools.com/w3images/la.jpg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  height: 530px;
-}
-
-.main-title {
-  padding: 2rem 1rem;
-  color: white;
-  line-height: 2;
-  vertical-align: bottom;
-  width: 354px;
-  margin-left: calc(50% - 177px);
-}
-
-.helper {
-  height: 100%;
-  vertical-align: bottom;
-}
-
-.main-title h1 {
-  font-family: "Segoe UI", Arial, sans-serif;
-  font-size: 24px;
-}
-
-.section-title {
-  font-family: "Segoe UI", Arial, sans-serif;
-  font-size: 30px;
-  font-weight: 400;
-  letter-spacing: 4px;
-  margin: 0 10px;
-}
-
-.color-white {
-  color: white;
-}
-
-.color-gray {
-  color: #656565;
-}
-
-.bg-red {
-  background-color: #f44336;
-  padding: 0 0.5rem;
-  margin-left: 1rem;
-}
-
-.bg-black {
-  background-color: black;
-  border-radius: 50%;
-  padding: 0 0.5rem;
-}
-
-.topic {
-  color: #656565;
-  font-style: italic;
-}
-
-.band-members {
-  padding: 2rem 0;
-  font-size: 0;
-}
-
-.members-item {
-  width: calc(100% / 3);
-  font-size: 1rem;
-}
-
-.members-content {
-  margin: 15px 0;
-}
-
-#tour {
-  background-color: black;
-}
-
-.item-img img {
-  width: 60%;
-  border-radius: 4px;
-  border-style: none;
-}
-
-.mb-1 {
-  margin-bottom: 1rem;
-}
-
-.bg-white {
-  background-color: white;
-}
-
-.border-top {
-  border-top: 1px solid #ccc;
-}
-
-.tickets {
-  margin: 0 -0.5rem;
-}
-
-.padding-inside {
-  padding: 0.15px 16px;
-}
-
-.button-tickets {
-  display: inline-block;
-  background-color: black;
-  margin-bottom: 1rem;
-  padding: 0.5rem 1rem 0.7rem;
-  font-family: "Lato", sans-serif;
-  font-size: 16px;
-}
-
-.column {
-  vertical-align: top;
-  width: calc(100% / 2);
-}
-
-.contact-contain {
-  padding: 2rem 0;
-}
-
-.size-icon {
-  font-size: 18px;
-  width: 30px;
+.icons {
+  width: calc((100% - 188px) / 2);
+  text-align: left;
 }
 
 .text0 {
   font-size: 0;
 }
 
-.form {
-  margin: 0 -1rem 0.5rem -1rem;
-  padding: 0 0.5rem;
-  font-size: 0;
-}
-
-.half-form {
-  padding: 0 0.5rem;
-  width: calc(100% / 2);
-}
-.half-form input {
-  max-width: 100%;
-}
-
-.input-message {
-  width: 100%;
-}
-.form-button {
-  text-align: right;
-}
-
-.button-send {
-  display: inline-block;
-  background-color: black;
-  cursor: pointer;
-  margin: 1rem 0;
-  padding: 0.5rem 1rem;
-  font-family: "Lato", sans-serif;
-  font-size: 16px;
-  text-align: center;
-}
-
-.map-image {
-  background-image: url(https://www.w3schools.com/w3images/map.jpg);
+.hero-content {
+  background-image: url(./slideshow-img-3\ 2.png);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: 660px;
+  height: 700px;
   max-width: 100%;
+  font-size: 0;
 }
 
-.icon-size {
-  font-size: 1.5rem;
-  text-align: center;
+.align-helper {
+  height: 100%;
+  width: 0px;
+  vertical-align: middle;
 }
 
-.p-author a {
-  color: #656565;
-  text-decoration: underline;
+.hero-greetings-wrapper {
+  width: calc(100% - 92px);
+}
+
+.hero-greetings {
+  font-size: 1rem;
+  vertical-align: middle;
+}
+
+.hero-content > div {
+  vertical-align: middle;
+}
+
+.size-i {
+  font-size: 48px;
+  color: #757575;
+  opacity: 30%;
+  cursor: pointer;
+}
+
+.award {
+  max-width: 100%;
+  padding: 5rem 0;
+}
+
+.card-award {
+  width: calc(25% - 2rem);
+}
+
+.sign-award {
+  opacity: 15%;
+}
+
+.award-heading {
+  font-family: "Bellefair", sans-serif;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 1.3em;
+  color: #1f1f1f;
+  text-transform: uppercase;
+}
+
+.award-content {
+  font-size: 14px;
+  line-height: 1.7em;
 }
