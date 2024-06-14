@@ -1,6 +1,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Bellefair&display=swap");
 
+:root {
+  --color-black: #1f1f1f;
+  --color-gray: #757575;
+  --color-white: #ffffff;
+  --color-gold: #ad9962;
+  --line-height-1-5: 1.5;
+  --font-size-14: 14px;
+  --font-weight-400: 400;
+  --font-Bellefair: "Bellefair", sans-serif;
+  --text-uppercase: uppercase;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -23,56 +35,56 @@ html {
 
 a {
   text-decoration: none;
-  color: #1f1f1f;
-  font-size: 14px;
+  color: var(--color-black);
+  font-size: var(--font-size-14);
   letter-spacing: 2%;
   text-align: center;
-  line-height: 1.5;
+  line-height: var(--line-height-1-5);
 }
 
 h1 {
-  font-family: "Bellefair", sans-serif;
-  font-weight: 400;
+  font-family: var(--font-Bellefair);
+  font-weight: var(--font-weight-400);
   font-size: 64px;
   line-height: 72px;
-  color: #1f1f1f;
-  text-transform: uppercase;
+  color: var(--color-black);
+  text-transform: var(--text-uppercase);
 }
 
 h3 {
-  font-size: 14px;
-  line-height: 1.5;
-  font-weight: 400;
+  font-size: var(--font-size-14);
+  line-height: var(--line-height-1-5);
+  font-weight: var(--font-weight-400);
   text-align: center;
-  color: #ffffff;
+  color: var(--color-white);
 }
 
 h2 {
   font-size: 20px;
-  line-height: 1.5;
+  line-height: var(--line-height-1-5);
   font-weight: 300;
-  letter-spacing: 3%;
-  color: #1f1f1f;
+  letter-spacing: 0.03em;
+  color: var(--color-black);
 }
 
 p {
   font-size: 18px;
-  line-height: 1.5;
-  color: #757575;
+  line-height: var(--line-height-1-5);
+  color: var(--color-gray);
 }
 
 i {
-  font-size: 14px;
+  font-size: var(--font-size-14);
 }
 
 button {
   font-family: "Poppins", sans-serif;
-  font-size: 14px;
-  color: white;
+  font-size: var(--font-size-14);
+  color: var(--color-white);
   font-weight: 500;
   border: none;
-  letter-spacing: 5%;
-  line-height: 1.5;
+  letter-spacing: 0.05em;
+  line-height: var(--line-height-1-5);
   width: 240px;
   cursor: pointer;
 }
@@ -82,13 +94,20 @@ span {
 }
 
 .bg-gold {
-  background-color: #ad9962;
+  background-color: var(--color-gold);
 }
 
 .display-ib {
   display: inline-block;
 }
 
+.bg-light-gray {
+background-color: #D9D9D9;
+}
+
+.bg-dark-gray {
+background-color:  #828282;;
+}
 .text-right {
   text-align: right;
 }
@@ -117,9 +136,13 @@ span {
   background-repeat: no-repeat;
   height: 700px;
   max-width: 100%;
-  font-size: 0;
 }
 
+.align-bottom-helper {
+  height: 100%;
+  width: 0px;
+  vertical-align: bottom;
+}
 .align-helper {
   height: 100%;
   width: 0px;
@@ -141,14 +164,9 @@ span {
 
 .size-i {
   font-size: 48px;
-  color: #757575;
+  color: var(--color-gray);
   opacity: 30%;
   cursor: pointer;
-}
-
-.award {
-  max-width: 100%;
-  padding: 5rem 0;
 }
 
 .card-award {
@@ -160,15 +178,118 @@ span {
 }
 
 .award-heading {
-  font-family: "Bellefair", sans-serif;
-  font-weight: 400;
+  font-family: var(--font-Bellefair);
+  font-weight: var(--font-weight-400);
   font-size: 22px;
   line-height: 1.3em;
-  color: #1f1f1f;
-  text-transform: uppercase;
+  color: var(--color-black);
+  text-transform: var(--text-uppercase);
 }
 
 .award-content {
-  font-size: 14px;
+  font-size: var(--font-size-14);
   line-height: 1.7em;
 }
+
+.heading-collection {
+  font-size: 18px;
+  color: var(--color-black);
+  font-weight: 300;
+  line-height: 1.3em;
+  letter-spacing: 0.03em;
+  text-transform: var(--text-uppercase);
+}
+
+.name-collection {
+  font-family: var(--font-Bellefair);
+  font-weight: var(--font-weight-400);
+  font-size: 42px;
+  line-height: var(--line-height-1-5);
+  color: var(--color-black);
+  text-transform: var(--text-uppercase);
+}
+
+.simple-linear {
+  background: linear-gradient(#f2ebde00 0%, #f2ebde 100%);
+}
+
+.bg-card1 {
+  background-image: url(./banner2_1.png);
+  height: 500px;
+}
+
+.bg-card2 {
+  background-image: url(./banner\ 3_1.png);
+  height: 500px;
+}
+
+.bg-card3 {
+  background-image: url(./banner\ 5.png);
+  height: 500px;
+}
+
+.overlay {
+  background: linear-gradient(180deg, rgba(103, 70, 55, 0) 12.3%, #35241d 100%),
+    linear-gradient(180deg, rgba(32, 19, 13, 0) 11.94%, #20130d 100%);
+
+  height: 100%;
+  width: 100%;
+}
+.card-collection {
+  width: calc(100% / 3 - 1rem);
+}
+
+.title-card {
+  font-size: 16px;
+  font-weight: 300;
+  color: var(--color-white);
+  letter-spacing: 0.03em;
+  text-transform: var(--text-uppercase);
+}
+
+.name-card {
+  font-family: var(--font-Bellefair);
+  font-weight: var(--font-weight-400);
+  color: var(--color-white);
+  font-size: 28px;
+  line-height: 1.2em;
+  text-transform: var(--text-uppercase);
+  letter-spacing: 0.03em;
+}
+
+.contain-card {
+  font-size: 16px;
+}
+
+.new-collection {
+  background: none;
+  border: 1px solid var(--color-white);
+  width: 277px;
+  cursor: pointer;
+}
+
+.circle {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.btn-view-collection {
+  width: 266px;
+  text-transform: var(--text-uppercase);
+}
+
+.size-i-collection {
+  font-size: 24px;
+  width: 24px;
+  height: 24px;
+  color: var(--color-gray);
+  opacity: 30%;
+  cursor: pointer;
+}
+
+.icon-collection {
+  width: calc((100% - 1140px) / 2)
+}
+
